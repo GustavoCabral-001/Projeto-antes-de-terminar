@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="globals.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Cadastro de Veículo - Cabrals Cars</title>
+    </head>
+    <body>
+        <div class="page">
+            <div class="div">
+                <div class="background">
+                    <div class="overlap">
+                        <div class="form">
+                            <!-- Dados do Proprietário -->
+                            <div class="fieldset">
+                                <legend class="legend-dados-do">Dados do Proprietário</legend>
+
+                                <label for="nome" class="label-nome">Nome:</label>
+                                <input type="text" id="nome" class="input" placeholder="Digite o nome">
+
+                                <label for="cpf" class="label-CPF">CPF:</label>
+                                <input type="text" id="cpf" class="input-2" placeholder="Digite o CPF">
+
+                                <label for="celular" class="label-celular">Celular:</label>
+                                <input type="tel" id="celular" class="input-3" placeholder="(00) 00000-0000">
+
+                                <label for="telefone-fixo" class="label-telefone-fixo">Telefone fixo:</label>
+                                <div class="container-wrapper">
+                                    <input type="tel" id="telefone-fixo" class="container" placeholder="(00) 0000-0000">
+                                </div>
+
+                                <label for="cep" class="label-CEP">CEP:</label>
+                                <input type="text" id="cep" class="input-4" placeholder="">
+
+                                <label for="estado" class="label-estado">Estado:</label>
+                                <select id="estado" class="input-5">
+                                    <!-- Opções -->
+                                </select>
+
+                                <label for="cidade" class="label-cidade">Cidade:</label>
+                                <select id="cidade" class="input-6">
+                                    <!-- Opções -->
+                                </select>
+                            </div>
+
+                            <!-- Dados do Veículo -->
+                            <div class="overlap-2">
+                                <div class="fieldset-4">
+                                    <legend class="legend-dados-do-ve">Dados do Veículo</legend>
+
+                                    <label for="fabricante" class="label-fabricante">Fabricante:</label>
+                                    <select id="fabricante" class="input">
+                                        <!-- Opções -->
+                                    </select>
+
+                                    <label for="modelo" class="label-modelo">Modelo:</label>
+                                    <input type="text" id="Fabricação" class="input-10" placeholder="Digite o modelo">
+
+
+                                    <label for="ano-fabricacao" class="label-ano-fabrica-o">Ano Fabricação:</label>
+                                    <input type="text" id="Fabricação" class="input-9" placeholder="Digite o ano de frabicação">
+
+                                        <!-- Opções -->
+                                    </select>
+                                    
+                                    <label for="ano-modelo" class="label-ano-modelo">Ano Modelo:</label>
+                                    <input type="text" id="modelo" class="input-8" placeholder="Digite o ano de modelo">
+                                        <!-- Opções -->
+                                    
+
+                                    <label for="preco" class="label-pre-o">Preço:</label>
+                                    <input type="text" id="preco" class="input-5" placeholder="Digite o preço">
+
+                                    <label for="quilometragem" class="label-quilometragem">Quilometragem:</label>
+                                    <input type="text" id="quilometragem" class="input-6" placeholder="Digite a quilometragem">
+                                    
+
+                                    <div class="fieldset-5">
+                                        <legend class="legend-fotos">Fotos</legend>
+                                        <p class="voc-pode-enviar-at">
+                                            <span class="text-wrapper-4">Você pode enviar até </span>
+                                            <span class="text-wrapper-5">1 foto</span>
+                                            <span class="text-wrapper-4"> do seu veículo.</span>
+                                        </p>
+                                        <p class="aviso-cada-arquivo">
+                                            <span class="text-wrapper-6">Aviso: Cada arquivo deve ter no máximo 10 </span>
+                                            <span class="text-wrapper-7">MB</span>
+                                            <span class="text-wrapper-6">.</span>
+                                        </p>
+                                        <div class="border"><span class="text-wrapper-8">+ Adicionar fotos</span></div>
+                                    </div>
+                                </div>
+
+                                <!-- Texto para Venda -->
+                                <div class="fieldset-6">
+                                    <legend class="legend-texto-para">Texto para venda</legend>
+                                    <p>Informe mais detalhes sobre o seu veículo. Capriche na descrição, isso ajuda a vender :)</p>
+                                    <textarea class="textarea" placeholder="Escreva uma descrição..."></textarea>
+                                    <small class="small-2">500 caracteres restantes</small>
+                                    <button class="button" type="submit">
+                                        <div class="text-wrapper"><a href="banco de dados.html">Adicionar Carro</a></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <footer class="footer">
+                            <div class="container-2">
+                                <nav class="nav-list">
+                                    <div class="item-link-HOME"><a href="index.html">Home</a></div>
+                                    <div class="item-link-VENDA"><a href="vendas.html">Venda</a></div>
+                                    <div class="item-link-GALERIA"><a href="galeria.html">Galeria</a></div>
+                                    <div class="item-link-EVENTOS"><a href="eventos.html">Eventos</a></div>
+                                    <div class="item-link-SOBRE-n-s"><a href="sobre-nos.html">Sobre nós</a></div>
+                                    <div class="item-link-CONTATO"><a href="#formulario">Contato</a></div>
+                                </nav>
+                                <p class="text-wrapper-11">Todos os direitos reservados a Cabrals Cars</p>
+                                <div class="heading-cabrals">Cabrals Cars</div>
+                                <img class="rectangle" src="imagens2/rectangle-1.svg" alt="Decoração do rodapé" />
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <!-- Header -->
+                <header class="header">
+                    <div class="container-3">
+                        <img class="image" src="imagens2/9623738a30a03914554830d7f5add91b.jfif" alt="Logo Cabrals Cars">
+                        <nav class="navbar">
+                            <div class="item-link-HOME-2"><a href="index.html">Home</a></div>
+                            <div class="item-link-VENDA"><a href="vendas.html">Venda</a></div>
+                            <div class="item-link-GALERIA-2"><a href="galeria.html">Galeria</a></div>
+                            <div class="item-link-EVENTOS-2"><a href="eventos.html">Eventos</a></div>
+                            <div class="item-link-SOBRE-n-s-2"><a href="sobre-nos.html">Sobre nós</a></div>
+                            <div class="item-link-CONTATO-2"><a href="#formulario">Contato</a></div>
+                        </nav>
+                    </div>
+                    <img class="rectangle-2" src="imagens2/rectangle-1.svg" alt="Decoração do cabeçalho" />
+                </header>
+            </div>
+        </div>
+    </body>
+</html>

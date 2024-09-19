@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<header> <!-- cabeça do site-->
+    <div class="center">
+        <div class="logo"></div>
+        <nav class="menu">
+            <ul>
+                <li><a style="color: red;" href="index.html">HOME</a></li>
+                <li><a href="formulario.html">VENDA</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<body>
+    <h1>Venda de Carros</h1>
+
+    <h2>Adicionar Carro</h2>
+    <form id="carForm">
+        <input type="text" id="modeloID" placeholder="Modelo ID" required>
+        <input type="number" id="ano" placeholder="Ano" required>
+        <input type="text" id="preco" placeholder="Preço" required>
+        <input type="text" id="cor" placeholder="Cor" required>
+        <input type="number" id="quilometragem" placeholder="Quilometragem" required>
+        <button type="submit">Adicionar Carro</button>
+    </form>
+
+    <h2>Lista de Carros</h2>
+    <ul id="carList"></ul>
+
+    <h2>Adicionar Cliente</h2>
+    <form id="clientForm">
+        <input type="text" id="clientNome" placeholder="Nome" required>
+        <input type="text" id="clientCPF" placeholder="CPF" required>
+        <input type="text" id="clientEndereco" placeholder="Endereço" required>
+        <input type="text" id="clientTelefone" placeholder="Telefone" required>
+        <input type="email" id="clientEmail" placeholder="Email" required>
+        <button type="submit">Adicionar Cliente</button>
+    </form>
+
+    <h2>Lista de Clientes</h2>
+    <ul id="clientList"></ul>
+
+    <h2>Adicionar Vendedor</h2>
+    <form id="sellerForm">
+        <input type="text" id="sellerNome" placeholder="Nome" required>
+        <input type="text" id="sellerCPF" placeholder="CPF" required>
+        <input type="text" id="sellerEndereco" placeholder="Endereço" required>
+        <input type="text" id="sellerTelefone" placeholder="Telefone" required>
+        <input type="email" id="sellerEmail" placeholder="Email" required>
+        <button type="submit">Adicionar Vendedor</button>
+    </form>
+
+    <h2>Lista de Vendedores</h2>
+    <ul id="sellerList"></ul>
+
+    <h2>Registrar Venda</h2>
+    <form id="saleForm">
+        <input type="number" id="saleCarroID" placeholder="Carro ID" required>
+        <input type="number" id="saleClienteID" placeholder="Cliente ID" required>
+        <input type="number" id="saleVendedorID" placeholder="Vendedor ID" required>
+        <input type="date" id="saleData" required>
+        <input type="text" id="salePreco" placeholder="Preço de Venda" required>
+        <select id="saleTipoPagamento">
+            <option value="à vista">À vista</option>
+            <option value="parcelado">Parcelado</option>
+        </select>
+        <input type="number" id="saleNumParcelas" placeholder="Número de Parcelas">
+        <button type="submit">Registrar Venda</button>
+    </form>
+
+    <h2>Lista de Vendas</h2>
+    <ul id="saleList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
